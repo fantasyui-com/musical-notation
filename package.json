@@ -1,0 +1,20 @@
+{
+  "name": "musical-notation",
+  "version": "1.0.0",
+  "description": "Simple and lightweight musical notation based on beat sequencers and inspired by good ideas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyui-com/musical-notation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasyui-com/musical-notation/issues"
+  },
+  "homepage": "https://github.com/fantasyui-com/musical-notation#readme"
+}
