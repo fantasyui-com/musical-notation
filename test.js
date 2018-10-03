@@ -3,13 +3,22 @@
 const assert = require('assert');
 const program = require('./index.js');
 
-const result = program(`
-[----][-x--][----][-x--]
-[----][-x--][----][-x--]
-[-x--][-x--][-x--][-x--]
-[-x--][----][-x--][----]
-[-x--][----][-x--][----]
-`);
+const input = `
+  [----][-x--][----][-x--]
+  [----][-x--][----][-x--]
+  [-x--][-x--][-x--][-x--]
+  [-x--][----][-x--][----]
+  [-x--][----][-x--][----]
+`; // note it is sloppy on purpose
 
+const actual = program(input);
+const expected = [
+  [ 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 ],
+  [ 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0 ],
+  [ 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0 ]
+]
+console.info(actual);
 
-assert(result, []);
+assert.deepEqual( actual , expected );
