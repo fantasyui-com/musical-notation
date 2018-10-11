@@ -4,6 +4,8 @@
   "description": "Simple and lightweight musical notation based on beat sequencers and inspired by good ideas.",
   "main": "index.js",
   "scripts": {
+    "es6mod": "cp index.js index.mjs; cjs-to-es6 index.mjs;",
+    "publish": "npm run es6mod; git add .; git commit -m \"Build, Transpile, Publish, Release\"; npm version minor; git push; npm publish;",
     "test": "test.js"
   },
   "repository": {
