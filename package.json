@@ -1,10 +1,10 @@
 {
   "name": "musical-notation",
-  "version": "1.4.0",
+  "version": "1.0.0",
   "description": "Simple and lightweight musical notation based on beat sequencers and inspired by good ideas.",
   "main": "index.js",
   "scripts": {
-    "test": "./test.js"
+    "test": "test.js"
   },
   "repository": {
     "type": "git",
