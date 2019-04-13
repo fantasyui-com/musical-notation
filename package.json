@@ -1,6 +1,6 @@
 {
   "name": "musical-notation",
-  "version": "2.11.0",
+  "version": "2.12.0",
   "description": "Simple and lightweight musical notation based on beat sequencers and inspired by good ideas.",
   "main": "index.js",
   "scripts": {
