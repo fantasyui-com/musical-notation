@@ -1,4 +1,4 @@
-export default function(notes){
+module.exports = function(notes){
 
   const response = [];
 
@@ -21,4 +21,4 @@ export default function(notes){
 
   return response;
 
-};
+}
