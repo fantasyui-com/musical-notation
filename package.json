@@ -7,14 +7,15 @@
     "es6mod": "cp index.js index.mjs; cjs-to-es6 index.mjs;",
     "gitpush": "git add .; git commit -m \"Build, Transpile, Publish, Release\"; npm version minor; git push;",
     "prepare": "npm run es6mod; npm run gitpush;",
-    "test": "test.js"
+    "test": "test.js",
+    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; npm publish; git push;"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fantasyui-com/musical-notation.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "fantasyui.com <fantasyui.com@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fantasyui-com/musical-notation/issues"
